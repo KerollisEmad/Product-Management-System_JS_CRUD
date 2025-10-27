@@ -1,0 +1,42 @@
+.form-control:focus {
+  box-shadow: none;
+  border: 0;
+}
+.form-control,
+.form-control:focus {
+  background-color: rgb(105, 114, 114);
+  color: #fff;
+}
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:focus ~ label {
+  background-color: transparent;
+}
+.form-floating > .form-control:focus ~ label {
+  color: #fff;
+}
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* input[type="file"]::placeholder {
+        color: blue;
+    } */
+
+textarea {
+  min-height: 100px !important;
+}
+[data-bs-theme="dark"] input[type="file"] {
+  --bs-tertiary-bg: #fff;
+  --bs-body-color: #000000;
+}
+
+.error {
+  font-size: 14px;
+  color: #f00;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 10px;
+}
+.error::before {
+  content: "*";
+}
